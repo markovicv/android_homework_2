@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+
+    android:layout_height="130dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/contactImg"
+            android:src="@drawable/ic_person_black_24dp"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/nameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="vukasin"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/surnameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="markovic"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/telephoneId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="064/222/333"
+            android:textSize="10sp" />
+
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/emailId"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="maric@raf.rs"
+              android:textSize="10sp" />
+
+          <Button
+              android:layout_width="30dp"
+              android:id="@+id/removeId"
+              android:background="@drawable/ic_cancel"
+              android:layout_height="30dp"
+
+              android:layout_marginLeft="100dp"/>
+
+
+      </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
